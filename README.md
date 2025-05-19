@@ -1,2 +1,2 @@
-# Austin Daughertys Portfolio
+# Austin Daugherty's Portfolio
 
