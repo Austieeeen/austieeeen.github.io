@@ -111,6 +111,11 @@
 
 }
 
+  i.fas {
+    color: var(--vegas-gold) !important; /* Blue color */
+    font-size: 24px; /* Icon size */
+  }
+
 
 
 
