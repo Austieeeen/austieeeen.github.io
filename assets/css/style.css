@@ -297,6 +297,29 @@ article.active {
   z-index: -1;
 }
 
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0;
+}
+.chip {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: #ffe082;
+  color: var(--smoky-black);
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border: none;
+  outline: none;
+  transition: background 0.2s;
+}
+.chip:not(:last-child) {
+  margin-right: 4px;
+}
+
 
 
 
