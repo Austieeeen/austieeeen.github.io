@@ -103,6 +103,7 @@ i.fas {
 
 a {
   text-decoration: none;
+  color: var(--vegas-gold);
 }
 
 li {
@@ -1025,7 +1026,7 @@ main {
 .pdf-caption {
   margin-top: 8px;
   font-size: 1rem;
-  color: #FFD700;
+  color: var(--vegas-gold);
   text-align: center;
   font-weight: 500;
 }
