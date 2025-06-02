@@ -1,20 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
   /**
@@ -105,10 +88,6 @@ i.fas {
   font-size: 24px;
   /* Icon size */
 }
-
-
-
-
 
 /*-----------------------------------*\
   #RESET
@@ -353,8 +332,6 @@ article.active {
 
 
 
-
-
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -375,13 +352,8 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
-}
-
-.sidebar.active {
-  max-height: 405px;
 }
 
 .sidebar-info {
@@ -417,20 +389,6 @@ main {
   margin-bottom: 4px !important;
 }
 
-.info_more-btn {
-  position: absolute;
-  top: -15px;
-  right: -15px;
-  border-radius: 0 15px;
-  font-size: 13px;
-  color: var(--orange-yellow-crayola);
-  background: var(--border-gradient-onyx);
-  padding: 10px;
-  box-shadow: var(--shadow-2);
-  transition: var(--transition-1);
-  z-index: 1;
-}
-
 .info_more-btn::before {
   content: "";
   position: absolute;
@@ -451,15 +409,6 @@ main {
   background: var(--bg-gradient-yellow-2);
 }
 
-.info_more-btn span {
-  display: none;
-}
-
-.sidebar-info_more {
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition-2);
-}
 
 .sidebar.active .sidebar-info_more {
   opacity: 1;
@@ -520,16 +469,6 @@ main {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
@@ -537,8 +476,6 @@ main {
 .article-title {
   margin-bottom: 30px;
 }
-
-
 
 /**
  * skills 
@@ -582,11 +519,6 @@ main {
   height: 100%;
   border-radius: inherit;
 }
-
-
-
-
-
 
 
 /*-----------------------------------*\
@@ -699,10 +631,6 @@ main {
   }
 }
 
-
-
-
-
 /**
  * responsive larger than 580px screen
  */
@@ -728,8 +656,6 @@ main {
     --fs-8: 12px;
 
   }
-
-
 
   /**
    * #REUSED STYLE
@@ -777,12 +703,7 @@ main {
    */
 
   .sidebar {
-    max-height: 180px;
     margin-bottom: 30px;
-  }
-
-  .sidebar.active {
-    max-height: 584px;
   }
 
   .sidebar-info {
@@ -805,21 +726,6 @@ main {
     padding: 5px 18px;
   }
 
-  .info_more-btn {
-    top: -30px;
-    right: -30px;
-    padding: 10px 15px;
-  }
-
-  .info_more-btn span {
-    display: block;
-    font-size: var(--fs-8);
-  }
-
-  .info_more-btn ion-icon {
-    display: none;
-  }
-
   .separator {
     margin: 32px 0;
   }
@@ -837,8 +743,6 @@ main {
   .skills-item:not(:last-child) {
     margin-bottom: 25px;
   }
-
-
 
   /**
    * #PORTFOLIO, BLOG
@@ -876,8 +780,6 @@ main {
   .has-scrollbar::-webkit-scrollbar-button {
     width: 100px;
   }
-
-
 
   /**
    * SIDEBAR
@@ -926,7 +828,6 @@ main {
   /**
    * REUSED STYLE
    */
-
   .sidebar,
   article {
     width: 950px;
@@ -1054,10 +955,6 @@ main {
     margin: auto auto auto auto;
   }
 
-  .info_more-btn {
-    display: none;
-  }
-
   .sidebar-info_more {
     opacity: 1;
     visibility: visible;
@@ -1068,9 +965,7 @@ main {
   }
 
   .contact-info :is(.contact-link) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    word-break: break-all;
   }
 
   .contact-info :is(.contact-link, time, address) {
